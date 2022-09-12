@@ -153,3 +153,62 @@ body {
   top: 60%;
   z-index: 6;
 }
+
+
+/* services styles  */
+
+.header-text p {
+  margin-bottom: -1px;
+  color: var(--secondary);
+}
+
+.header-text h1 {
+  color: #1E1E1E;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.service-card-body {
+  position: relative;
+}
+
+.card:hover{
+  border: 2px solid var(--primary);
+  transition: .2s ease-in-out;
+}
+
+.icon {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.text p:nth-child(1) {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 5px;
+  color: var(--textB);
+}
+
+.text p:nth-child(2) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.005em;
+  color: var(--paragraph1);
+}
+
+.explore-button {
+  color: var(--textB);
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.explore-button:hover{
+  color: var(--primary);
+}
