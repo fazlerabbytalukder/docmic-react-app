@@ -178,6 +178,11 @@ body {
   transition: .2s ease-in-out;
 }
 
+.icon-images{
+  height: 25px;
+  width: 25px;
+}
+
 .icon {
   position: absolute;
   top: 5%;

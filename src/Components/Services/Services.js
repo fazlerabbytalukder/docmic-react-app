@@ -1,10 +1,14 @@
-import React from 'react';
-import heart from '../../images/medical cardiology.png'
-import checkBook from '../../images/tik-board.png'
-import dentel from '../../images/medical-dental.png'
-import brifecase from '../../images/briefcase-medical.png'
+import React, { useEffect, useState } from 'react';
+import Service from '../Service/Service';
 
 const Services = () => {
+    const [servics, setServices] = useState([]);
+    useEffect(() => {
+        fetch('https://raw.githubusercontent.com/fazlerabbytalukder/docmic-react-app/main/public/ServiceData.json')
+            .then(res => res.json())
+            .then(data => setServices(data));
+    }, []);
+    
     return (
         <div className='container mt-5'>
             <div className="header-text text-center">
@@ -13,62 +17,9 @@ const Services = () => {
             </div>
             <div className="service-content">
                 <div className="row">
-                    <div className="col-md-3 mt-4">
-                        <div className="card shadow-sm">
-                            <div className="card-body service-card-body">
-                                <div className="icon">
-                                    <img src={heart} alt="" />
-                                </div>
-                                <div className="text">
-                                    <p>Cardiology</p>
-                                    <p>Seduahag perspiciant under omnised atused error</p>
-                                    <button className='explore-button'>Explore Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-3 mt-4">
-                    <div className="card shadow-sm">
-                            <div className="card-body service-card-body">
-                                <div className="icon">
-                                    <img src={checkBook} alt="" />
-                                </div>
-                                <div className="text">
-                                    <p>Monthly Check Up</p>
-                                    <p>Seduahag perspiciant under omnised atused error</p>
-                                    <button className='explore-button'>Explore Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-3 mt-4">
-                    <div className="card shadow-sm">
-                            <div className="card-body service-card-body">
-                                <div className="icon">
-                                    <img src={dentel} alt="" />
-                                </div>
-                                <div className="text">
-                                    <p>Dental Care</p>
-                                    <p>Seduahag perspiciant under omnised atused error</p>
-                                    <button className='explore-button'>Explore Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-3 mt-4">
-                    <div className="card shadow-sm">
-                            <div className="card-body service-card-body">
-                                <div className="icon">
-                                    <img src={brifecase} alt="" />
-                                </div>
-                                <div className="text">
-                                    <p>Opthalmology</p>
-                                    <p>Seduahag perspiciant under omnised atused error</p>
-                                    <button className='explore-button'>Explore Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {
+                        servics.map(service => <Service key={service.id} service={service} />)
+                    }
                 </div>
             </div>
         </div>
