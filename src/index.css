@@ -1,13 +1,130 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary: #2D89FF;
+  --secondary: #642DFF;
+  --white: #FFFFFF;
+  --paragraph1: #575757;
+  --textB: #1E1E1E;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.background {
+  background-color: #E9F2F6;
+}
+
+
+/* navbar design  */
+
+.logo {
+  color: var(--primary);
+  width: 40px;
+}
+
+.logo::first-letter {
+  font-size: 20px;
+}
+
+.logo-span {
+  color: var(--secondary);
+}
+
+.Nav-button {
+  color: var(--paragraph1);
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  list-style-type: none;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.Nav-button:hover,
+.active {
+  color: var(--primary);
+}
+
+.common-button {
+  background-color: var(--primary);
+  padding: 15px 20px;
+  color: var(--white);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  /* margin-left: 57px; */
+  border-radius: 5px;
+}
+
+.common-button:hover {
+  color: var(--paragraph1);
+}
+
+/* home design  */
+
+.heading {
+  color: var(--textB);
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 73px;
+}
+
+.health-color {
+  color: var(--primary);
+}
+
+.priority-color {
+  color: var(--secondary);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--paragraph1);
+}
+
+.rate h1 {
+  color: var(--secondary);
+}
+
+.rate p {
+  color: var(--paragraph1);
+}
+
+.meet-doctor-container {
+  background-color: var(--white);
+  width: 249px;
+  height: 145px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.plus-icon {
+  background-color: var(--primary);
+  padding: 5px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.rectangle {
+  background-color: #2D89FF;
+  height: 15px;
+  width: 189px;
+  background: linear-gradient(90deg, rgba(45, 137, 255, 0.57) 0%, rgba(45, 137, 255, 0) 100%);
+  border-radius: 50px;
+}
+
+.circle{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 500px;
+  width: 500px;
+  background-color: #1E1E1E;
 }
