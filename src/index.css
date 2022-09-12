@@ -225,3 +225,55 @@ body {
 .explore-button:hover {
   color: var(--primary);
 }
+
+/* footer design  */
+
+.footer-bg {
+  background-color: #E9EEF7;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--paragraph1);
+  text-align: justify;
+}
+
+.footer-icon img {
+  height: 32px;
+  width: 32px;
+  padding: 5px;
+  background: #E8EEF6;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), inset 0px 1px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 26px;
+}
+
+.footer-heading {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--secondary);
+}
+
+.footer-links {
+  list-style-type: none;
+}
+
+.footer-links li {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.timing p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.timing p:first-child{
+  color: var(--secondary);
+}

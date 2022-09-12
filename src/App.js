@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Experience from './Components/Experience/Experience';
+import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 import OurFeatures from './Components/OurFeatures/OurFeatures';
@@ -18,7 +19,8 @@ function App() {
         </Switch>
         <Services />
         <Experience />
-        <OurFeatures/>
+        <OurFeatures />
+        <Footer/>
       </BrowserRouter>
     </div>
   );
