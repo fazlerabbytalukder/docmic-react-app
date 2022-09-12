@@ -122,9 +122,18 @@ body {
 
 .circle{
   position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 500px;
-  width: 500px;
-  background-color: #1E1E1E;
+  right: 25%;
+  top: 5%;
+  height: 370px;
+  width: 370px;
+  border-width: 35px;
+  background: linear-gradient(white,white) padding-box, linear-gradient(180deg, hsla(251, 95%, 69%, 1) 0%, hsla(0, 0%, 100%, 1) 70%) border-box;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.right{
+  z-index: 5;
 }

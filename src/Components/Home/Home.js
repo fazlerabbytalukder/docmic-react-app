@@ -31,6 +31,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="col-md-6 d-flex align-items-center position-relative">
+                    <div className='circle'></div>
                     <div className="right">
                         <div className="full-image">
                             <img className='img-fluid' src={homeImg} alt="" />
@@ -50,6 +51,7 @@ const Home = () => {
                                 <div className='rectangle'></div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
