@@ -157,9 +157,16 @@ body {
 
 /* services styles  */
 
-.header-text p {
+.header-text p:nth-child(1) {
   margin-bottom: -1px;
   color: var(--secondary);
+}
+
+.header-text p:nth-child(3) {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--paragraph1);
+  text-align: justify;
 }
 
 .header-text h1 {
@@ -173,12 +180,12 @@ body {
   position: relative;
 }
 
-.card:hover{
+.card:hover {
   border: 2px solid var(--primary);
   transition: .2s ease-in-out;
 }
 
-.icon-images{
+.icon-images {
   height: 25px;
   width: 25px;
 }
@@ -214,6 +221,6 @@ body {
   line-height: 19px;
 }
 
-.explore-button:hover{
+.explore-button:hover {
   color: var(--primary);
 }
