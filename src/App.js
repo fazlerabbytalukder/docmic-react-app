@@ -3,6 +3,7 @@ import './App.css';
 import Experience from './Components/Experience/Experience';
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
+import OurFeatures from './Components/OurFeatures/OurFeatures';
 import Services from './Components/Services/Services';
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
           </Route>
         </Switch>
         <Services />
-        <Experience/>
+        <Experience />
+        <OurFeatures/>
       </BrowserRouter>
     </div>
   );
