@@ -120,20 +120,36 @@ body {
   border-radius: 50px;
 }
 
-.circle{
+.circle {
   position: absolute;
   right: 25%;
   top: 5%;
   height: 370px;
   width: 370px;
   border-width: 35px;
-  background: linear-gradient(white,white) padding-box, linear-gradient(180deg, hsla(251, 95%, 69%, 1) 0%, hsla(0, 0%, 100%, 1) 70%) border-box;
+  background: linear-gradient(white, white) padding-box, linear-gradient(180deg, hsla(251, 95%, 69%, 1) 0%, hsla(0, 0%, 100%, 1) 70%) border-box;
   border-style: solid;
   border-color: transparent;
   border-radius: 50%;
   z-index: 1;
 }
 
-.right{
+.right {
   z-index: 5;
+}
+
+.regular-checkup-button {
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 15px 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 5px;
+  border: none;
+
+  position: absolute;
+  left: 0;
+  top: 60%;
+  z-index: 6;
 }

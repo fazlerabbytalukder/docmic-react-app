@@ -53,6 +53,7 @@ const Home = () => {
                         </div>
 
                     </div>
+                    <button className='regular-checkup-button'> <i class="fa-regular fa-circle-check"></i> Regular Checkup</button>
                 </div>
             </div>
         </div>
