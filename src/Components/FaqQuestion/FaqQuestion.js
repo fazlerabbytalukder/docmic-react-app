@@ -36,10 +36,12 @@ const FaqQuestion = () => {
                     </div>
                 </div>
                 <div className="col-md-4 expert-img-container">
+                    <div className="expert-image d-flex align-items-center justify-content-center">
                     <img className='img-fluid' src={faqImg} alt="" />
+                    </div>
                     <button className='solution-from-expert-btn d-flex align-items-center'>
                         <div className="button-img">
-                            <img src={buttonImt} alt="" />
+                            <img className='img-fluid' src={buttonImt} alt="" />
                         </div>
                         <p>Get Solutions From <br /> Our Experts</p>
                     </button>

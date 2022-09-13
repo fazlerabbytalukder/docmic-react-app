@@ -12,7 +12,7 @@ const OurFeatures = () => {
     return (
         <div className='container mt-5'>
             <div className="row">
-                <div className="col-md-5">
+                <div className="col-md-5 d-none d-sm-block d-sm-none d-md-block">
                     <img src={featureIng} alt="" />
                 </div>
                 <div className="col-md-7">
