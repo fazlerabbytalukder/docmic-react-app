@@ -293,6 +293,19 @@ body {
 .testimonial-card {
   background-color: var(--white);
   padding: 0 40px;
+  position: relative;
+}
+
+.plus-sign-img{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.dot-sign-img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .slick-arrow {

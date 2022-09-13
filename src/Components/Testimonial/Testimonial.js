@@ -55,6 +55,8 @@ const Testimonial = () => {
                                         <img className='img-fluid' src={item.img1} alt="" />
                                     </div>
                                 </div>
+                                <img className='img-fluid plus-sign-img' src={item.img2} alt="" />
+                                <img className='img-fluid dot-sign-img' src={item.img3} alt="" />
                             </div>
                         ))
                     }
