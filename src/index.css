@@ -257,11 +257,11 @@ body {
   color: var(--secondary);
 }
 
-.footer-links {
-  list-style-type: none;
+.without-heading {
+  margin-top: 33px;
 }
 
-.footer-links li {
+.footer-links p {
   margin-bottom: 15px;
   font-weight: 400;
   font-size: 12px;
@@ -274,6 +274,13 @@ body {
   line-height: 15px;
 }
 
-.timing p:first-child{
+.timing p:first-child {
   color: var(--secondary);
+}
+
+.copyright-footer {
+  color: var(--textB);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
 }

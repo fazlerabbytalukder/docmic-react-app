@@ -10,10 +10,10 @@ const Footer = () => {
         <div className='footer-bg mt-5'>
             <div className='container'>
                 <div className="row">
-                    <div className="col-md-3 mt-5 d-flex justify-content-center">
+                    <div className="col-md-4 mt-5">
                         <div className="footer-des">
                             <p className='logo fw-bold'>Doc<span className='logo-span'>mic.</span></p>
-                            <p className='footer-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum assumenda maxime ullam voluptas porro adipisci placeat.</p>
+                            <p className='footer-text pe-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum assumenda maxime ullam voluptas porro adipisci placeat.</p>
                             <div className="footer-icon d-flex align-items-center">
                                 <img src={facebook} alt="" />
                                 <img src={insta} alt="" />
@@ -23,26 +23,26 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-3 mt-5 d-flex justify-content-center justify-sm-content-start">
+                    <div className="col-md-3 mt-5">
                         <div className="quick-link">
-                            <p className='footer-heading text-center'>Quick Link</p>
-                            <ul className='footer-links'>
-                                <li>About Us</li>
-                                <li>Our Procing</li>
-                                <li>Our Gallery</li>
-                                <li>Appointment</li>
-                                <li>Privacy Policy</li>
-                            </ul>
+                            <p className='footer-heading'>Quick Link</p>
+                            <div className='footer-links'>
+                                <p>About Us</p>
+                                <p>Our Procing</p>
+                                <p>Our Gallery</p>
+                                <p>Appointment</p>
+                                <p>Privacy Policy</p>
+                            </div>
                         </div>
                     </div>
-                    <div className="col-md-3 mt-5 d-flex justify-content-center">
-                        <ul className='footer-links pt-4'>
-                            <li>Services</li>
-                            <li>Our Doctors</li>
-                            <li>Our Latest News</li>
-                            <li>Careers</li>
-                            <li>Contact Us</li>
-                        </ul>
+                    <div className="col-md-2 mt-5">
+                        <div className='footer-links without-heading'>
+                            <p>Services</p>
+                            <p>Our Doctors</p>
+                            <p>Our Latest News</p>
+                            <p>Careers</p>
+                            <p>Contact Us</p>
+                        </div>
                     </div>
                     <div className="col-md-3 mt-5">
                         <p className='footer-heading'>Opening Hours</p>
@@ -69,6 +69,9 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="col-md-12 py-3">
+                    <p className='copyright-footer'>Copyright @222 Medicom All Right Reserved</p>
                 </div>
             </div>
         </div>
