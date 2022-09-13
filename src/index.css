@@ -16,9 +16,10 @@ body {
 
 .background {
   background-image:
-    radial-gradient(at 75% 19%, hsla(200, 40%, 94%, 1) 0px, transparent 50%),
-    radial-gradient(at 99% 46%, hsla(300, 47%, 92%, 1) 0px, transparent 50%),
-    radial-gradient(at 15% 13%, hsla(200, 40%, 94%, 1) 0px, transparent 50%);
+radial-gradient(at 55% 77%, hsla(199,39%,94%,1) 0px, transparent 50%),
+radial-gradient(at 75% 19%, hsla(200,40%,94%,1) 0px, transparent 50%),
+radial-gradient(at 98% 47%, hsla(300,47%,92%,1) 0px, transparent 50%),
+radial-gradient(at 15% 13%, hsla(200,40%,94%,1) 0px, transparent 50%);
 }
 
 
@@ -294,7 +295,7 @@ body {
 /* testimonial part design  */
 
 .testimonial-card {
-  background-color: var(--white);
+  background: var(--white);
   padding: 0 40px;
   position: relative;
 }
