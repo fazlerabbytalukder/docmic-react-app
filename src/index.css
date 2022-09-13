@@ -15,7 +15,10 @@ body {
 }
 
 .background {
-  background-color: #E9F2F6;
+  background-image:
+    radial-gradient(at 75% 19%, hsla(200, 40%, 94%, 1) 0px, transparent 50%),
+    radial-gradient(at 99% 46%, hsla(300, 47%, 92%, 1) 0px, transparent 50%),
+    radial-gradient(at 15% 13%, hsla(200, 40%, 94%, 1) 0px, transparent 50%);
 }
 
 
@@ -296,13 +299,13 @@ body {
   position: relative;
 }
 
-.plus-sign-img{
+.plus-sign-img {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.dot-sign-img{
+.dot-sign-img {
   position: absolute;
   bottom: 0;
   left: 0;

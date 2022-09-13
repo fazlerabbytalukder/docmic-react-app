@@ -1,13 +1,8 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
-import Experience from './Components/Experience/Experience';
-import FaqQuestion from './Components/FaqQuestion/FaqQuestion';
 import Footer from './Components/Footer/Footer';
-import Home from './Components/Home/Home';
+import HomePage from './Components/HomePage/HomePage';
 import Navbar from './Components/Navbar/Navbar';
-import OurFeatures from './Components/OurFeatures/OurFeatures';
-import Services from './Components/Services/Services';
-import Testimonial from './Components/Testimonial/Testimonial';
 
 function App() {
   return (
@@ -16,14 +11,9 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path='/'>
-            <Home/>
+            <HomePage/>
           </Route>
         </Switch>
-        <Services />
-        <Experience />
-        <OurFeatures />
-        <FaqQuestion />
-        <Testimonial/>
         <Footer />
       </BrowserRouter>
     </div>
