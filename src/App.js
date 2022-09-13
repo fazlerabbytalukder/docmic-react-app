@@ -7,6 +7,7 @@ import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 import OurFeatures from './Components/OurFeatures/OurFeatures';
 import Services from './Components/Services/Services';
+import Testimonial from './Components/Testimonial/Testimonial';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
         <Services />
         <Experience />
         <OurFeatures />
-        <FaqQuestion/>
+        <FaqQuestion />
+        <Testimonial/>
         <Footer />
       </BrowserRouter>
     </div>
