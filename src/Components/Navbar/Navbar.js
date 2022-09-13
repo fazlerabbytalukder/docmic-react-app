@@ -7,8 +7,10 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
                     <p className='logo fw-bold'>Doc<span className='logo-span'>mic.</span></p>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                    <button className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="toggler-icon top-bar"></span>
+                        <span className="toggler-icon middle-bar"></span>
+                        <span className="toggler-icon bottom-bar"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -30,7 +32,7 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link to='/contacts' className='Nav-button'>Contacts</Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item d-none d-sm-block d-sm-none d-md-block">
                                 <Link to='/consulation' className='common-button ms-lg-5'>Free Consulation</Link>
                             </li>
                         </ul>
