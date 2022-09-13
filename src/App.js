@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Experience from './Components/Experience/Experience';
+import FaqQuestion from './Components/FaqQuestion/FaqQuestion';
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
@@ -20,7 +21,8 @@ function App() {
         <Services />
         <Experience />
         <OurFeatures />
-        <Footer/>
+        <FaqQuestion/>
+        <Footer />
       </BrowserRouter>
     </div>
   );
