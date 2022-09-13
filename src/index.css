@@ -409,7 +409,25 @@ radial-gradient(at 15% 13%, hsla(200,40%,94%,1) 0px, transparent 50%);
   color: var(--paragraph1);
 }
 
-/* contact us forms  */
+/* department page design  */
+
+.comming-soon-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timing-container{
+  background-color: var(--white);
+  border: 3px solid var(--secondary);
+  margin: 0 200px;
+  border-radius: 10px;
+  padding: 20px 0 0 0;
+}
+
+.timing-container h1{
+  color: var(--secondary);
+}
 
 /* footer design  */
 
