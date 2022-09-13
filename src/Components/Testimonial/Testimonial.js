@@ -36,26 +36,28 @@ const Testimonial = () => {
     };
     return (
         <div className='container mt-5'>
-            <div className="header-text text-center">
+            <div className="header-text text-center mb-5">
                 <p>Testimonial</p>
                 <h1>What they say?</h1>
             </div>
-            <div className="testimonial-part px-5">
-                <Slider {...settings}>
-                {
-                            data.map((item) => (
-                                <div className='testimonial-card d-flex justify-content-between align-items-center'>
-                                    <div className="left">
-                                        <p>{item.Name}</p>
-                                        <p>{item.occupation}</p>
-                                        <p>{item.description}</p>
+            <div className="testimonial-part px-5 mx-md-5">
+                <Slider {...settings} className='slick-slider mx-md-5'>
+                    {
+                        data.map((item) => (
+                            <div className='testimonial-card'>
+                                <div className="row">
+                                    <div className="col-md-8 pt-5">
+                                        <p className='person-name'>{item.Name}</p>
+                                        <p className='person-occupation'>{item.occupation}</p>
+                                        <p className='person-des'>{item.description}</p>
                                     </div>
-                                    <div className="right">
-                                        <img src={item.img1} alt="" />
+                                    <div className="col-md-4 pt-5">
+                                        <img className='img-fluid' src={item.img1} alt="" />
                                     </div>
                                 </div>
-                            ))
-                        }
+                            </div>
+                        ))
+                    }
                 </Slider>
             </div>
         </div>
@@ -65,7 +67,7 @@ const Testimonial = () => {
 const data = [
     {
         Name: 'David jamaes',
-        occupation:'Patient',
+        occupation: 'Patient',
         description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it is a long established fact that a reader will be distracted by the readable content',
         img1: 'https://i.ibb.co/wS3KnRR/Ikbal-1.png',
         img2: 'https://i.ibb.co/2Z83W7y/Ornament-24.jpg',
@@ -73,7 +75,7 @@ const data = [
     },
     {
         Name: 'Fazle Rabby',
-        occupation:'Doctor',
+        occupation: 'Doctor',
         description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it is a long established fact that a reader will be distracted by the readable content',
         img1: 'https://i.ibb.co/wS3KnRR/Ikbal-1.png',
         img2: 'https://i.ibb.co/2Z83W7y/Ornament-24.jpg',
@@ -81,7 +83,7 @@ const data = [
     },
     {
         Name: 'Ratul Talukder',
-        occupation:'Patient',
+        occupation: 'Patient',
         description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it is a long established fact that a reader will be distracted by the readable content',
         img1: 'https://i.ibb.co/wS3KnRR/Ikbal-1.png',
         img2: 'https://i.ibb.co/2Z83W7y/Ornament-24.jpg',
@@ -89,7 +91,7 @@ const data = [
     },
     {
         Name: 'Mikel jamaes',
-        occupation:'Doctor',
+        occupation: 'Doctor',
         description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it is a long established fact that a reader will be distracted by the readable content',
         img1: 'https://i.ibb.co/wS3KnRR/Ikbal-1.png',
         img2: 'https://i.ibb.co/2Z83W7y/Ornament-24.jpg',
@@ -97,7 +99,7 @@ const data = [
     },
     {
         Name: 'Jemi jamaes',
-        occupation:'Patient',
+        occupation: 'Patient',
         description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it is a long established fact that a reader will be distracted by the readable content',
         img1: 'https://i.ibb.co/wS3KnRR/Ikbal-1.png',
         img2: 'https://i.ibb.co/2Z83W7y/Ornament-24.jpg',
